@@ -26,12 +26,28 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(title: Text(title)),
       body: Column(
         children: <Widget>[
-          Card(
-            child: Text("Chart"),
+          Container(
+            width: double.infinity,
+            child: Card(
+              child: Container(
+                child: Text("Chart"),
+                width: double.infinity,
+              ),
+              color: Colors.blueAccent,
+              elevation: 5,
+            ),
           ),
-          Card(
-            child: Text("List of TX"),
-          )
+          Container(
+            width: double.infinity,
+            child: Card(
+              child: Container(
+                child: Text("TX"),
+                width: double.infinity,
+              ),
+              color: Colors.redAccent,
+              elevation: 5,
+            ),
+          ),
         ],
       ),
     );
