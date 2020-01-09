@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        // mainAxisAlignment: MainAxisAlignment.start,
         // crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Container(
@@ -54,6 +54,11 @@ class MyHomePage extends StatelessWidget {
               ),
               color: Colors.blueAccent,
               elevation: 5,
+            ),
+          ),
+          Card(
+            child: Column(
+              children: <Widget>[TextField(), TextField()],
             ),
           ),
           Column(
