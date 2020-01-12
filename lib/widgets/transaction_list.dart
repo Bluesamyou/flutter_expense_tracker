@@ -9,10 +9,12 @@ class TransactionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemBuilder: (context, index) {
-        return Card(
-          child: Row(
+    return Container(
+      height: 300,
+      child: ListView.builder(
+        itemBuilder: (ctx, index) {
+          return Card(
+              child: Row(
             children: <Widget>[
               Container(
                 margin: EdgeInsets.symmetric(
@@ -59,10 +61,10 @@ class TransactionList extends StatelessWidget {
                 ],
               )
             ],
-          ),
-        );
-      },
-      itemCount: transactions.length,
+          ));
+        },
+        itemCount: transactions.length,
+      ),
     );
   }
 }

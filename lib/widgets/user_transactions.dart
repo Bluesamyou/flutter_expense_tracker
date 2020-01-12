@@ -35,9 +35,9 @@ class _UserTransactionState extends State<UserTransaction> {
       id: DateTime.now().toString(),
     );
 
-    setState() {
+    setState(() {
       _transactions.add(newTransaction);
-    }
+    });
   }
 
   @override
