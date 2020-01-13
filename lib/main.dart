@@ -16,6 +16,22 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         accentColor: Colors.orange,
         fontFamily: "Nunito",
+        textTheme: ThemeData.light().textTheme.copyWith(
+              title: TextStyle(
+                fontFamily: 'Nunito',
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),
+            ),
+        appBarTheme: AppBarTheme(
+          textTheme: ThemeData.light().textTheme.copyWith(
+                title: TextStyle(
+                  fontFamily: 'Nunito',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
+              ),
+        ),
       ),
       home: MyHomePage(),
     );

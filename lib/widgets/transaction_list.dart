@@ -26,7 +26,7 @@ class TransactionList extends StatelessWidget {
                     Radius.circular(100),
                   ),
                   border: Border.all(
-                    color: Colors.purple,
+                    color: Theme.of(context).primaryColorDark,
                     width: 2,
                   ),
                 ),
@@ -36,7 +36,7 @@ class TransactionList extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
-                    color: Colors.purple,
+                    color: Theme.of(context).primaryColor,
                   ),
                 ),
               ),
@@ -45,11 +45,7 @@ class TransactionList extends StatelessWidget {
                 children: <Widget>[
                   Text(
                     transactions[index].title,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
+                    style: Theme.of(context).textTheme.title,
                   ),
                   Text(
                     DateFormat.MMMMEEEEd().format(transactions[index].date),
