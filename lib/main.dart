@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         accentColor: Colors.orange,
+        fontFamily: "Nunito",
       ),
       home: MyHomePage(),
     );
@@ -96,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Text("Chart"),
                   width: double.infinity,
                 ),
-                color: Theme.of(context).primaryColorDark,
+                color: Theme.of(context).primaryColor,
                 elevation: 5,
               ),
             ),
