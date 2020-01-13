@@ -63,7 +63,11 @@ class _MyHomePageState extends State<MyHomePage> {
     showModalBottomSheet(
         context: ctx,
         builder: (_) {
-          return NewTransaction(addNewTransaction);
+          return GestureDetector(
+            onTap: () {},
+            behavior: HitTestBehavior.opaque,
+            child: NewTransaction(addNewTransaction),
+          );
         });
   }
 
@@ -75,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add, color: Colors.white),
-            onPressed: () => {},
+            onPressed: () => startAddNewTransaction(context),
           )
         ],
       ),
