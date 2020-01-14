@@ -4,6 +4,7 @@ import 'package:flutter_expense_tracker/widgets/new_transaction.dart';
 import './widgets/transaction_list.dart';
 import './widgets/new_transaction.dart';
 import './models/transaction.dart';
+import './widgets/chart.dart';
 
 void main() => runApp(MyApp());
 
@@ -106,17 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // mainAxisAlignment: MainAxisAlignment.start,
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Container(
-              width: double.infinity,
-              child: Card(
-                child: Container(
-                  child: Text("Chart"),
-                  width: double.infinity,
-                ),
-                color: Theme.of(context).primaryColor,
-                elevation: 5,
-              ),
-            ),
+            Chart(),
             TransactionList(_transactions),
           ],
         ),
